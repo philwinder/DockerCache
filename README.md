@@ -7,7 +7,7 @@ The proxy is insecure, meaning it does not require any credentials to connect to
 # Installation
 
 ```
-docker run -d -p 5000:5000 --restart=always --name registry -v ~/data:/var/lib/registry philwinder/DockerImageCache
+docker run -d -p 5000:5000 --restart=always --name registry -v ~/data:/var/lib/registry philwinder/dockercache
 ```
 
 This command will save the registry data to the `~/data` directory. It also sets restart to `always`, which should mean it restarts whenever the docker daemon is shut down.
